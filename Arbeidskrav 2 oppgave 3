@@ -1,0 +1,18 @@
+"""
+Omregning fra grader til radianer
+Nina N. Egeberg (niege3523@usn.no)
+Oppdatert 2025 11 10
+"""
+
+import numpy as np
+
+def omregning_grader_til_radianer(v_grad):
+    v_rad = v_grad*np.pi/180
+    return v_rad
+    
+
+v_grad = float(input('Skriv gradtallet:'))
+
+v_rad = omregning_grader_til_radianer(v_grad)
+
+print(f"Radiantallet til vinkelen er {v_rad:.2f} rad")
