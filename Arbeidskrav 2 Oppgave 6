@@ -1,0 +1,32 @@
+"""
+Plotter funksjonen f(x) = -x^2-5, for x på intervallet [-10,10] 
+Nina N. Egeberg (niege3523@usn.no)
+Oppdatert 2025 11 13
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+def plotter_funksjon(x):
+    f = -x**2-5
+    return f
+
+x = np.linspace(-10,10,200)
+
+f = plotter_funksjon(x)
+
+
+
+plt.close("all")
+
+plt.plot(x, f, label="f=-x^2-5")
+
+plt.title("Graf av f(x)=-x^2-5")
+plt.xlabel("x")
+plt.ylabel("f(x)")
+
+plt.grid()
+plt.legend()
+
+plt.show()
