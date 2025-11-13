@@ -4,6 +4,7 @@ Nina N. Egeberg (niege3523@usn.no)
 Oppdatert 2025 11 10
 """
 
+
 alder = float(input('Hvilket år er du født?'))
 år = 2024
 antall = år-alder
