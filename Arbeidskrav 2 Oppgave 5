@@ -1,0 +1,21 @@
+"""
+Utregning av areal og omkrets av en gitt figur
+Nina N. Egeberg (niege3523@usn.no)
+Oppdatert 2025 11 13
+"""
+
+import numpy as np
+
+def figur_data(a,b):
+    areal = ((np.pi*(a/2)**2)/2) + ((b*a)/2)
+ 
+    omkrets = ((np.pi*(a))/2) + (b+(np.sqrt(a**2+b**2)))
+    return areal, omkrets
+
+a = float(input("Hva er verdien til a?"))
+b = float(input("Hva er verdien til b?"))
+
+areal, omkrets = figur_data(a,b)
+
+print(f"Arealet av figuren er {areal:.2f}")
+print(f"Omkretsen til figuren er {omkrets:.2f}")
