@@ -6,7 +6,7 @@ Oppdatert 2025 11 10
 
 
 alder = float(input('Hvilket år er du født?'))
-år = 2024
+år = 2024    #Året du ønsker alderen skal beregens ut fra
 antall = år-alder
 
 print(f"Du var {antall:.0f} år i {år}.")
