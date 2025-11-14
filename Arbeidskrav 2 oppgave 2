@@ -1,7 +1,7 @@
 """
 Beregning av antall pizzaer til klassefest
 Nina N. Egeberg (niege3523@usn.no)
-Oppdatert 2025 11 10
+Oppdatert 2025 11 14
 """
 
 import numpy as np
@@ -9,4 +9,4 @@ import numpy as np
 antall_elever = int(input('Skriv antall elever: '))
 antall_pizza = antall_elever*1/4   #Hver person får 1/4 pizza
 
-print(f"Det må handles inn {np.ceil(antall_pizza):.0f} pizzaer")
+print(f"Det må handles inn {np.ceil(antall_pizza):.0f} pizzaer til festen")
